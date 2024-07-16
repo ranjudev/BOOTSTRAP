@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+
+    <style>
+        .vertical-images img {
+            height: 300px; 
+            object-fit: cover;
+        }
+
+        .about-us-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .text-head {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .text-para {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .vertical-images img:hover {
+            transform: scale(1.05); 
+            filter: brightness(0.8); 
+            transition: transform 0.3s, filter 0.3s; 
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <header class="p-3 bg-dark text-light sticky-top">
+        <div class="row">
+            <div class="col">
+                <h1>TECH 4 U</h1>
+            </div>
+            <div class="col-12 col-md-6 mt-3 d-flex justify-content-start justify-content-md-end">
+                <nav>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="index.html">HOME</a></li>
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="about.html">ABOUT</a></li>
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="products.html">PRODUCTS</a></li>
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/drone.jpg" class="d-block img-fluid w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Drones Shopping Event</h5>
+                          <p>Experience cutting-edge aerial innovation with our advanced, high-performance drones.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ev board.jpg" class="d-block img-fluid w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Explore EV Simulators</h5>
+                          <p>Discover the future of driving with our immersive, state-of-the-art EV simulator</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex flex-column vertical-images">
+                    <img src="images/circuit-board.jpg" class="card-img img-fluid mt-3 mb-3" alt="Image 1">
+                    <img src="images/imgg5.jpg" class="img-fluid" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-section bg-light">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div class="img-head">
+                        <img src="images/about us.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="text-head">
+                        About Us
+                    </h2>
+                    <div class="break-small mb-2"></div>
+                    <p class="text-para">
+                        Find everything you need to bring your electronic projects to life with our extensive selection of electronic components. We offer a wide variety of resistors, capacitors, transistors, diodes, and integrated circuits from top manufacturers. 
+                        Our components are sourced to ensure the highest quality and reliability, making them perfect for both prototyping and production. 
+                        Whether you're repairing existing electronics or building new devices from scratch, our comprehensive inventory has you covered.
+                        Discover the future of driving with our state-of-the-art Electric Vehicle (EV) simulators. Our simulators provide a realistic, immersive experience, allowing you to explore the capabilities and features of electric vehicles. 
+                        Designed for both educational purposes and professional training, our EV simulators feature advanced software and hardware to replicate real-world driving conditions.
+                        Learn about energy management, regenerative braking, and the environmental benefits of electric vehicles in a controlled, interactive environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container pt-3 pb-3 py-3">
+        <h2 class="text-center mt-2 mb-2 p-3">OUR PRODUCTS</h2>
+        <div class="row">
+            <div class="col-12  col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/drone-mockup.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <h2 class="mb-3 text-center">Drones</h2>
+                                <p class="text-center">150 Products</p>
+                                <a href="product 1.html" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/black-usb-flash-.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <h2 class="mb-3 text-center">USB Pendrives</h2>
+                                <p class="text-center">95 Products</p>
+                                <a href="product 2.html" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/headphones.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <h2 class="mb-3 text-center">Headphones</h2>
+                                <p class="text-center">125 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/circuit-board.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <h2 class="mb-3 text-center">Circuit Board</h2>
+                                <p class="text-center">230 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/product 5.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <h2 class="mb-3 text-center">Power Supply</h2>
+                                <p class="text-center">370 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/wireless-earbuds.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body ">
+                                <h2 class="mb-3 text-center">Wireless Earbuds</h2>
+                                <p class="text-center">320 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/product 7.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body ">
+                                <h2 class="mb-3 text-center">Wireless Speaker</h2>
+                                <p class="text-center">230 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="images/product 8.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body ">
+                                <h2 class="mb-3 text-center">Circuit Boards</h2>
+                                <p class="text-center">280 Products</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col-12 col-lg-6 bg-white p-3">
+                <h2>Contact Form</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Message</label>
+                        <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn btn-primary my-2">Submit</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6 bg-white p-3">
+                <h2 class="mb-2">Visit Us</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19904.819184986678!2d-0.5046272!3d51.4195456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1720781593984!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="py-3 custom-footer ">
+        <div class="container py-5" id="contact">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold pb-3">Visit us</h3>
+                    <p class="mb-2">
+                        1234 Lane, City, <br />
+                        State, Country
+                    </p>
+                    <a href="mailto:info@techforu.com" class="text-dark">info@techforu.com</a>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold pb-3">Our Link</h3>
+                    <div class="d-flex flex-column">
+                        <a href="index.html" class="text-dark mb-1">Home</a>
+                        <a href="about.html" class="text-dark mb-1">About Us</a>
+                        <a href="products.html" class="text-dark mb-1">Products</a>
+                        <a href="contact.html" class="text-dark">Contact</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3 class="fw-bold pb-3">Our Socials</h3>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-facebook fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-4 mb-0 copyright">© 2023 all rights reserved by Tech4U</p>
+    </footer>
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
